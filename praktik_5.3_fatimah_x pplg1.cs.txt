@@ -1,0 +1,27 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace peerulangan_whille
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Program akan terus berjalan hingga Anda mengetik 'keluar'.");
+
+            string inputUser = ""; // Inisialisasi variabel input
+
+            while (inputUser.ToLower() != "keluar")
+            {
+                Console.Write("Ketik sesuatu (atau 'keluar' untuk berhenti): ");
+                inputUser = Console.ReadLine(); // Membaca input dari pengguna
+                Console.WriteLine($"Anda mengetik: {inputUser}");
+            }
+
+            Console.WriteLine("\nProgram selesai. Terima kasih!");
+        }
+    }
+}
