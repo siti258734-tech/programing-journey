@@ -1,0 +1,27 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace contoh_for
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Mulai menghitung jumlah angka dari 1 hingga 5:");
+
+            int total = 0; // Variabel untuk menyimpan hasil penjumlahan
+
+            // Perulangan for untuk menjumlahkan angka dari 1 hingga 5
+            for (int i = 1; i <= 5; i++)
+            {
+                total += i; // Menyederhanakan penulisan total = total + i;
+                Console.WriteLine($"Menambahkan {i}, total sementara = {total}");
+            }
+
+            Console.WriteLine($"\nHasil akhir penjumlahan adalah: {total}");
+        }
+    }
+}

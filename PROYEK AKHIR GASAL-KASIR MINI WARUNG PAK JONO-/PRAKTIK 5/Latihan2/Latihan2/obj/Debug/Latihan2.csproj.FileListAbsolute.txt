@@ -1,0 +1,7 @@
+C:\PRAKTIK 5\Latihan2\Latihan2\bin\Debug\Latihan2.exe.config
+C:\PRAKTIK 5\Latihan2\Latihan2\bin\Debug\Latihan2.exe
+C:\PRAKTIK 5\Latihan2\Latihan2\bin\Debug\Latihan2.pdb
+C:\PRAKTIK 5\Latihan2\Latihan2\obj\Debug\Latihan2.csproj.AssemblyReference.cache
+C:\PRAKTIK 5\Latihan2\Latihan2\obj\Debug\Latihan2.csproj.CoreCompileInputs.cache
+C:\PRAKTIK 5\Latihan2\Latihan2\obj\Debug\Latihan2.exe
+C:\PRAKTIK 5\Latihan2\Latihan2\obj\Debug\Latihan2.pdb
