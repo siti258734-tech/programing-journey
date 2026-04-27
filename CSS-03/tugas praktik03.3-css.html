@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktik 03.3 - Text Transform</title>
+
+    <style>
+        :root {
+            --primary-color: #ec4899;
+            --bg-color: #fff0f6;
+            --card-bg: #ffffff;
+            --text-main: #4b164c;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #ffe4ec, #fbcfe8);
+            color: var(--text-main);
+            margin: 0;
+            padding: 40px 20px;
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 2.3rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 6px 18px rgba(236,72,153,0.15);
+            margin-bottom: 25px;
+            border-left: 6px solid var(--primary-color);
+        }
+
+        .uppercase {
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .lowercase {
+            text-transform: lowercase;
+        }
+
+        .capitalize {
+            text-transform: capitalize;
+        }
+
+        .normal {
+            text-transform: none;
+        }
+
+        .label {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Praktik 03.3 - Text Transform</h1>
+    <p>by Siti Fatimah X PPLG1 </p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <span class="label">Semangat (Uppercase)</span>
+        <p class="uppercase">
+            aku akan mengejar semua impianku tanpa takut gagal
+        </p>
+    </div>
+
+    <div class="card">
+        <span class="label">Keraguan (Lowercase)</span>
+        <p class="lowercase">
+            AKU TIDAK BOLEH MENYERAH WALAU KEADAAN SULIT
+        </p>
+    </div>
+
+    <div class="card">
+        <span class="label">Harapan Baru (Capitalize)</span>
+        <p class="capitalize">
+            perjalanan panjang ini akan membawaku menuju masa depan cerah
+        </p>
+    </div>
+
+    <div class="card">
+        <span class="label">Keyakinan (Normal)</span>
+        <p class="normal">
+            Rara tersenyum dan menutup bukunya. Ia sadar bahwa
+            kesuksesan bukan tentang siapa yang paling cepat,
+            tetapi siapa yang paling konsisten.
+        </p>
+    </div>
+
+</div>
+
+</body>
+</html>

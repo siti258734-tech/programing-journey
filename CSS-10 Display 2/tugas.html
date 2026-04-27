@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Overflow</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        article {
+            width: 220px;
+            height: 120px;
+            border: 2px solid black;
+            padding: 10px;
+            background-color: lightblue;
+        }
+
+        .visible {
+            overflow: visible;
+            background-color: lightgreen;
+        }
+
+        .hidden {
+            overflow: hidden;
+            background-color: lightcoral;
+        }
+
+        .scroll {
+            overflow: scroll;
+            background-color: lightyellow;
+        }
+
+        .auto {
+            overflow: auto;
+            background-color: lightpink;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Contoh Overflow pada CSS</h1>
+
+    <div class="container">
+
+        <!-- Article 1 -->
+        <article class="visible">
+            Overflow visible adalah kondisi di mana konten yang melebihi ukuran kotak tetap akan terlihat keluar dari batas elemen tersebut. Hal ini sering digunakan ketika kita tidak ingin memotong teks atau konten. Namun, penggunaan ini bisa membuat tampilan menjadi kurang rapi jika tidak diatur dengan baik.
+        </article>
+
+        <!-- Article 2 -->
+        <article class="hidden">
+            Overflow hidden digunakan untuk menyembunyikan bagian konten yang melebihi ukuran kotak. Jadi, jika teks terlalu panjang, maka bagian yang keluar tidak akan terlihat. Cara ini cocok digunakan untuk menjaga tampilan tetap rapi dan tidak berantakan.
+        </article>
+
+        <!-- Article 3 -->
+        <article class="scroll">
+            Overflow scroll akan menampilkan scrollbar secara otomatis baik dibutuhkan maupun tidak. Pengguna dapat menggulir isi konten di dalam kotak tersebut. Ini sangat berguna jika kita ingin memastikan semua konten tetap bisa diakses tanpa merusak layout halaman.
+        </article>
+
+        <!-- Article 4 -->
+        <article class="auto">
+            Overflow auto mirip dengan scroll, tetapi scrollbar hanya muncul jika diperlukan saja. Jika konten masih muat di dalam kotak, maka scrollbar tidak akan muncul. Ini adalah pilihan yang paling fleksibel dan sering digunakan dalam desain website modern.
+        </article>
+
+    </div>
+
+</body>
+</html>

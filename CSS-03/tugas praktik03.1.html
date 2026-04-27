@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktik 03.1 - Text Align</title>
+
+    <style>
+        :root {
+            --primary-color: #ec4899;
+            --bg-color: #fff0f6;
+            --card-bg: #ffffff;
+            --text-main: #4b164c;
+            --text-muted: #a855f7;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #ffe4ec, #fbcfe8);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            letter-spacing: -1px;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: var(--text-muted);
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font-size: 12px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 6px 18px rgba(236,72,153,0.15);
+            margin-bottom: 25px;
+            border-left: 6px solid var(--primary-color);
+        }
+
+        .label {
+            display: block;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--primary-color);
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .text-justify { text-align: justify; }
+        .text-center { text-align: center; }
+        .text-right { text-align: right; }
+
+        .indent { text-indent: 3em; }
+        .line-height-extra { line-height: 2; }
+
+        .custom-spacing {
+            letter-spacing: 1px;
+            word-spacing: 6px;
+        }
+
+        .nowrap-area {
+            white-space: break-spaces;
+            background: #ffe4f0;
+            padding: 12px;
+            border-radius: 8px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Praktik 03.1 - Text Align</h1>
+    <p>by Siti Fatimah X PPLG1</p>
+</header>
+
+<div class="container">
+
+    <div class="card text-justify">
+        <span class="label">Awal Cerita</span>
+        <p class="indent">
+            Di sebuah pagi yang cerah, Jubaedah duduk di dekat jendela kamarnya.
+            Cahaya matahari menyinari buku-buku pelajarannya yang tersusun rapi.
+            Ia memandang langit dan berjanji pada dirinya sendiri bahwa suatu hari
+            nanti ia akan menjadi seseorang yang bisa membanggakan keluarganya.
+        </p>
+    </div>
+
+    <div class="card text-center">
+        <span class="label">Harapan</span>
+        <p class="line-height-extra">
+            "Aku mungkin bukan yang paling hebat,"
+            <br>
+            "tapi aku akan menjadi yang paling gigih."
+            <br>
+            Kalimat itu selalu ia ulang setiap kali rasa lelah datang.
+        </p>
+    </div>
+
+    <div class="card text-right">
+        <span class="label">Keraguan</span>
+        <p class="custom-spacing">
+            Kadang   rasa   takut   muncul.  
+            Kadang   rasa   ragu   menghampiri.  
+            Tapi   ia   memilih   untuk   tetap   berjalan.
+        </p>
+    </div>
+
+    <div class="card">
+        <span class="label">Akhir yang Indah</span>
+        <p class="nowrap-area">
+            Hari demi hari berlalu.  
+
+            Usaha demi usaha dilakukan.  
+
+            Hingga akhirnya,  
+
+            mimpinya perlahan menjadi nyata.
+        </p>
+    </div>
+
+</div>
+
+</body>
+</html>
