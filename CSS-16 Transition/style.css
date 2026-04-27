@@ -1,0 +1,28 @@
+body{
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top:50px;
+}
+
+.box{
+    width: 200px;
+    height: 200;
+    background-color: blue;
+    color: white;
+    line-height: 200px;
+    margin: auto;
+
+    /*Transition*/
+    otransition-property: all;
+    transition-duration: 1s;
+    transition-delay: 0.5s;
+    -o-transition-timing-function: ease-in-out;
+        
+    }
+
+    /*Efek saat hover*/
+    .box:hover{
+        background-color: red;
+        width: 300px;
+        transform: rotate(20deg);
+    }
