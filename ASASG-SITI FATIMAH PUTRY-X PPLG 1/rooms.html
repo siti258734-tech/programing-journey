@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Rooms - Arunika Grand</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+  /* Agar scrool halaman menjadi halus */
+}
+
+body{
+  font-family:'Poppins',sans-serif;
+  background:#0c1b24;
+  color:white;
+  /* Mengatur tampilan dasar website */
+}
+
+/*  NAVBAR  */
+
+header{
+  position:fixed;
+  top:0;
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 60px;
+  background:rgba(0,0,0,0.8);
+  z-index:999;
+  /* Navbar tetap berada di atas walaupun halaman di scrool */
+}
+
+.logohotel{
+  font-size:22px;
+  font-weight:bold;
+  color:gold;
+}
+
+.logo i{
+  margin-right:8px;
+  /* Logo icon mahkoota dengan tulisan */
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  margin:0 12px;
+  font-size:14px;
+  transition:0.3s;
+  /* Menu navbar */
+}
+
+nav a:hover{
+  color:gold;
+  /* Efek hover saat mouse diarahkan */
+}
+
+nav a.active{
+  color:gold;
+}
+
+.btn-nav{
+  background:gold;
+  border:none;
+  padding:10px 18px;
+  font-weight:bold;
+  cursor:pointer;
+  border-radius:5px;
+  /* Tombol pesan sekarang di navbar */
+}
+
+/*  BAGIAN KAMAR  */
+
+#rooms{
+  padding:120px 60px 80px;
+  text-align:center;
+  /* Section kamar hotel */
+}
+
+#rooms h1{
+  font-size:40px;
+  margin-bottom:40px;
+  color:gold;
+  /* Judul section kamar */
+}
+
+.rooms-container{
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:25px;
+  max-width:1200px;
+  margin:auto;
+  /*
+Container semua kartu kamar
+Menggunakan GRID
+repeat(3,1fr) artinya:
+- 3 kolom
+- ukuran sama besar
+*/
+}
+
+/* CARD KAMAR */
+.card{
+  background:#111;
+  border-radius:15px;
+  overflow:hidden;
+  transition:0.3s;
+  /* Kotak kamar */
+}
+
+.card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 10px 25px rgba(255,215,0,0.3);
+  /* Efek saat disentuh mouse */
+}
+
+.card img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+  /* Gambar kamar */
+}
+
+.card h3{
+  margin-top:15px;
+  color:gold;
+  /* Nama kamar */
+}
+
+.card p{
+  font-size:14px;
+  margin:10px 0;
+  color:#ccc;
+  /* Deskripsi kamar */
+}
+
+.price{
+  margin-bottom:15px;
+  font-weight:bold;
+  /* Harga kamar */
+  
+}
+
+.btn{
+  display:inline-block;
+  margin-bottom:20px;
+  padding:10px 18px;
+  background:gold;
+  color:black;
+  text-decoration:none;
+  border-radius:5px;
+  font-weight:bold;
+  /* Tombol pesan sekarang */
+}
+
+/*  PEMESANAN  */
+
+#booking{
+  padding:80px 20px;
+  background:#111;
+  text-align:center;
+  /* Bagian form pemesanan */
+}
+
+#booking h1{
+  font-size:36px;
+  color:gold;
+  margin-bottom:30px;
+  /* Judul pemesanan */
+}
+
+#booking form{
+  max-width:400px;
+  margin:auto;
+  background:#0c1b24;
+  padding:30px;
+  border-radius:15px;
+  /* Kotak form booking */
+}
+
+#booking input,
+#booking select{
+  width:100%;
+  padding:12px;
+  margin-bottom:15px;
+  border:none;
+  border-radius:5px;
+}
+
+#booking button{
+  width:100%;
+  padding:12px;
+  background:gold;
+  border:none;
+  font-weight:bold;
+  cursor:pointer;
+  border-radius:5px;
+  /* Tombol submit pemesanan */
+}
+
+/*  PEMBAYARAN  */
+
+.payment{
+  margin-top:40px;
+  text-align:center;
+  /* Section metode pembayaran */
+}
+
+.payment h2{
+  color:gold;
+  margin-bottom:20px;
+  /* Judul pembayaran */
+}
+
+.payment-box{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:20px;
+  max-width:700px;
+  margin:auto;
+  /* Container pembayaran */
+}
+
+.pay-card{
+  background:#111;
+  padding:20px;
+  border-radius:12px;
+  transition:0.3s;
+}
+
+.pay-card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 8px 20px rgba(255,215,0,0.3);
+  /* Efek hover pembayaran */
+}
+
+.pay-card i{
+  font-size:30px;
+  color:gold;
+  margin-bottom:10px;
+  /* Icon pembayaran */
+}
+
+.pay-card p{
+  color:white;
+  font-size:14px;
+  /* Tulisan pembayaran */
+}
+
+.payment-box{
+  grid-template-columns:1fr 1fr;
+  /* Mengubah grid pembayaran jadi 2 kolom */
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header>
+
+  <div class="logo">
+    <i class="fa-solid fa-crown"></i>
+    ArunikaGrand
+  </div>
+
+  <nav>
+    <a href="index.html">BERANDA</a>
+    <a class="active" href="rooms.html">KAMAR</a>
+    <a href="about us.html">TENTANG KAMI</a>
+    <a href="contact.html">KONTAK</a>
+    <button class="btn-nav">
+    <a href="rooms.html" class="btn">PESAN SEKARANG</a> 
+  </button>
+  </nav>
+
+</header>
+
+<!-- INFORMASI KAMAR -->
+<section id="rooms">
+  <h1>Kamar kami</h1>
+  <div class="rooms-container">
+
+<!-- KAMAR 1 -->
+  <div class="card">
+  <img src="DELUXE ROOM.jpg">
+  <h3>Deluxe Room</h3>
+  <p>Kamar modern yang nyaman</p>
+  <div class="price">Rp450.000 / malam</div>
+  <a href="#booking" class="btn">
+  Pesan Sekarang
+  </a>
+  </div>
+
+    <!-- KAMAR 2 -->
+    <div class="card">
+    <img src="SUPERIOR ROOM.jpg">
+    <h3>Superior Room</h3>
+    <p>Elegan dan nyaman</p>
+    <div class="price">Rp350.000 / malam</div>
+    <a href="#booking" class="btn">
+    Pesan Sekarang
+    </a>
+    </div>
+
+    <!-- KAMAR 3 -->
+    <div class="card">
+    <img src="SUITE ROOM.jpg">
+    <h3>Suite Room</h3>
+    <p>Pengalaman mewah</p>
+    <div class="price">Rp750.000 / malam</div>
+    <a href="#booking" class="btn">
+    Pesan Sekarang
+    </a>
+    </div>
+
+    <!-- KAMAR 4 -->
+    <div class="card">
+    <img src="FAMILY ROOM.jpg">
+    <h3>Family Room</h3>
+    <p>Sempurna untuk keluarga</p>
+    <div class="price">Rp900.000 / malam</div>
+    <a href="#booking" class="btn">
+    Pesan Sekarang
+    </a>
+    </div>
+
+    <!-- KAMAR 5 -->
+    <div class="card">
+    <img src="OCEAN VIEW.jpg">
+    <h3>Ocean View</h3>
+    <p>Pemandangan laut yang indah</p>
+    <div class="price">Rp1.200.000 / malam</div>
+    <a href="#booking" class="btn">
+    Pesan Sekarang
+    </a>
+    </div>
+
+    <!-- KAMAR 6 -->
+    <div class="card">
+    <img src="PRESIDENTIAL SUITE.jpg">
+    <h3>Presidential Suite</h3>
+    <p>Kemewahan tertinggi</p>
+    <div class="price">Rp3.500.000 / malam</div>
+    <a href="#booking" class="btn">
+    Pesan Sekarang
+    </a>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- PEMESANAN -->
+<section id="booking">
+  <h1>Pesan Penginapan Anda</h1>
+  <form>
+  <input type="text"
+  name="nama"
+  placeholder="Nama Anda"
+  required>
+
+  <input type="email"
+  name="email"
+  placeholder="Email Anda"
+  required>
+
+  <!-- KAMAR -->
+  <select name="kamar" required>
+    <option>Deluxe Room</option>
+    <option>Superior Room</option>
+    <option>Suite Room</option>
+    <option>Family Room</option>
+    <option>Ocean View</option>
+    <option>Presidential Suite</option>
+  </select>
+
+  <!-- PEMBAYARAN -->
+  <select name="pembayaran" required>
+    <option value="">
+    Pilih Metode Pembayaran
+    </option>
+    <option>Cash</option>
+    <option>Bank Transfer</option>
+    <option>Credit Card</option>
+    <option>E-Wallet</option>
+  </select>
+
+  <input type="date"
+  name="checkin"
+  required>
+
+  <input type="date"
+  name="checkout"
+  required>
+
+  <button type="submit"
+    onclick="alert('Terimakasih, pesanan anda akan segera kami proses.')">
+    PESAN SEKARANG 
+  </button>
+</form>
+</section>
+</body>
+</html>

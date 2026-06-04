@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>About Us - Arunika Grand</title>
+
+<!-- ICON -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+/* ================= RESET ================= */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Poppins',sans-serif;
+  background:#0c1b24;
+  color:white;
+}
+
+/* ================= NAVBAR ================= */
+header{
+  position:fixed;
+  top:0;
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 60px;
+  background:rgba(0,0,0,0.8);
+  z-index:999;
+}
+
+.logo{
+  font-size:22px;
+  font-weight:bold;
+  color:gold;
+}
+
+.logo i{
+  margin-right:8px;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  margin:0 12px;
+  font-size:14px;
+  transition:0.3s;
+}
+
+nav a:hover{
+  color:gold;
+}
+
+nav a.active{
+  color:gold;
+}
+
+.btn-nav{
+  background:gold;
+  color:black;
+  padding:10px 18px;
+  border-radius:5px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+/*  ABOUT{TENTANG}  */
+.about{
+  padding:140px 60px 80px;
+}
+
+.about-container{
+  max-width:1200px;
+  margin:auto;
+
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:50px;
+
+  align-items:center;
+}
+
+/* TEKS */
+.about-text h1{
+  font-size:45px;
+  color:gold;
+  margin-bottom:25px;
+}
+
+.about-text p{
+  line-height:1.8;
+  margin-bottom:18px;
+  color:#dcdcdc;
+  font-size:15px;
+}
+
+/* IMAGE */
+.about-img img{
+  width:100%;
+  border-radius:20px;
+
+  box-shadow:0 10px 25px rgba(0,0,0,0.4);
+}
+</style>
+</head>
+
+<body>
+
+/* NAVBAR */
+<header>
+  <div class="logo">
+    <i class="fa-solid fa-crown"></i>
+    ArunikaGrand
+  </div>
+
+ <nav>
+    <a href="index.html">BERANDA</a>
+    <a href="rooms.html">KAMAR</a>
+    <a  class="active"  href="about us.html">TENTANG KAMI</a>
+    <a href="contact.html">KONTAK</a>
+    <button class="btn-nav">
+    <a href="rooms.html" class="btn">PESAN SEKARANG</a> 
+  </button>
+  </nav>
+
+</header>
+
+/* ABOUT */
+<section class="about">
+  <div class="about-container">
+    <!-- TEXT -->
+    <div class="about-text">
+      <h1>Tentang Kami</h1>
+      <p>
+        Arunika Grand Hotel & Resor adalah
+        destinasi penginapan mewah yang
+        menawarkan kenyamanan, keindahan,
+        dan pelayanan terbaik bagi setiap tamu.
+      </p>
+
+      <p>
+        Dengan desain elegan dan fasilitas
+        modern, kami menghadirkan pengalaman
+        menginap yang tak terlupakan baik untuk
+        liburan maupun perjalanan bisnis.
+      </p>
+
+      <p>
+        Kami berkomitmen memberikan pelayanan
+        terbaik dengan suasana yang hangat,
+        nyaman, dan profesional.
+      </p>
+
+    </div>
+
+    /* GAMBAR */
+    <div class="about-img">
+      <img src="GAMBAR HOTEL.jpg"
+      alt="Arunika Grand Hotel">
+    </div>
+
+  </div>
+
+</section>
+
+</body>
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact - Arunika Grand</title>
+
+<!-- ICON -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+/*  RESET  */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Poppins', sans-serif;
+  background:#0c1b24;
+  color:white;
+}
+
+/*  NAVBAR  */
+header{
+  position:fixed;
+  top:0;
+  width:100%;
+  display:flex;
+/*Nabar tetap di atas saat di scrol */
+
+  /*flexbox*/
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 60px;
+  background:rgba(0,0,0,0.8);
+  z-index:999;
+  /* Merapikan isi navbar */
+}
+
+.logo{
+  font-size:22px;
+  font-weight:bold;
+  color:gold;
+  /* Membuat logo */
+}
+
+.logo i{
+  margin-right:8px;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  margin:0 12px;
+  font-size:14px;
+  transition:0.3s;
+  /* Menu navigasi */
+}
+
+nav a:hover{
+  color:gold;
+}
+
+nav a.active{
+  color:gold;
+}
+
+.btn-nav{
+  background:gold;
+  color:black;
+  padding:10px 18px;
+  border-radius:5px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+/*  PAGE HEADER  */
+.page-header{
+  padding-top:140px;
+  text-align:center;
+  /* Memberi jarak dari navbar dan membuat judul di tengah */
+}
+
+.page-header h1{
+  font-size:45px;
+  color:gold;
+}
+
+/*  CONTACT  */
+.contact{
+  padding:60px 20px 80px;
+}
+
+.contact-container{
+  max-width:1100px;
+  margin:auto;
+
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+  /* Membuat layout */
+}
+
+.contact form{
+  background:#111;
+  padding:30px;
+  border-radius:15px;
+}
+
+.contact input,
+.contact textarea{
+  width:100%;
+  padding:12px;
+  margin-bottom:15px;
+  border:none;
+  border-radius:5px;
+}
+
+.contact textarea{
+  height:150px;
+  resize:none;
+}
+
+.contact button{
+  width:100%;
+  padding:12px;
+  border:none;
+  background:gold;
+  color:black;
+  font-weight:bold;
+  border-radius:5px;
+  cursor:pointer;
+}
+
+.contact-info{
+  background:#111;
+  padding:30px;
+  border-radius:15px;
+}
+
+.contact-info h3{
+  color:gold;
+  margin-bottom:20px;
+  font-size:28px;
+}
+
+.contact-info p{
+  margin-bottom:18px;
+  color:#dcdcdc;
+  font-size:15px;
+}
+
+
+
+</style>
+</head>
+
+<body>
+
+/*  NAVBAR  */
+<header>
+
+  <div class="logo">
+    <i class="fa-solid fa-crown"></i>
+    ArunikaGrand
+  </div>
+
+ <nav>
+    <a href="index.html">BERANDA</a>
+    <a href="rooms.html">KAMAR</a>
+    <a href="about us.html">TENTANG KAMI</a>
+    <a class="active" href="contact.html">KONTAK</a>
+    <button class="btn-nav">
+    <a href="rooms.html" class="btn">PESAN SEKARANG</a> 
+  </button>
+  </nav>
+
+</header>
+
+/* HEADER */
+<section class="page-header">
+  <h1>Kontak Kami</h1>
+</section>
+
+/* KONTAK */
+<section class="contact">
+
+  <div class="contact-container">
+
+    /* FORM */
+    <form>
+      <input type="text"
+      placeholder="Nama Anda"
+      required>
+
+      <input type="email"
+      placeholder="Email Anda"
+      required>
+
+      <textarea
+      placeholder="Pesan"
+      required></textarea>
+
+      <button type="submit"
+      onclick="alert('Terimakasih, pesan anda telah kami terima.')">
+
+      KIRIM PESAN DAN MASUKAN
+
+      </button>
+
+    </form>
+    /* INFO KONTAK  */
+    <div class="contact-info">
+      <h3>Info Kontak</h3>
+      <p>📍 Batang, Indonesia</p>
+      <p>📞 0812-3456-7890</p>
+      <p>📧 arunikagrand@gmail.com</p>
+    </div>
+
+  </div>
+
+</section>
+
+</body>
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArunikaGrand HOTEL</title>
+    <style>
+*{
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box;
+  /* Menghapus jarak default browser supaya tampilan lebih rapih */
+}
+
+.hero {
+  height: 100vh; /* Membuat tampilan full layar */
+  background: url("GAMBAR\ HOTEL.jpg") no-repeat center center/cover;
+  position: relative; /* gambar hotel sebagai background */
+}
+
+.overlay {
+  background: rgba(0,0,0,0.6);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  /* Memberi lapisan hitam transparan agar tulisan terlihat jelas */
+}
+
+/* NAVBAR BIAR DI ATAS GAMBAR */
+header {
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  background: transparent; 
+}
+
+.hero-text {
+  margin-left: 60px;
+  color: white;
+  /* Mengatur tulisan yang ada di bagian hero atau banner utama */
+}
+
+.hero {
+  height: 100vh;
+  background: url("GAMBAR\ HOTEL.jpg") no-repeat center/cover;
+  /* Tampilan banner utama */
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  /* Tampilan dasar seluruh website */
+}
+
+/* NAVBAR MENU ATAS WEB */
+header {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 60px;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.logo i {
+  color: gold;
+  margin-right: 8px;
+  /* Memberi warna emas pada icon mahkota */
+}
+
+nav a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+  /* Mengatur tampilan menu di atas */
+}
+
+nav a.active {
+  color: gold;
+  /* Memberi warna emas pada halaman yang sedang aktif */
+}
+
+.btn-nav {
+  background: gold;
+  border: none;
+  padding: 10px 18px;
+  font-weight: bold;
+  cursor: pointer;
+  /* Mengatur tombol pesan sekarang */
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: url("GAMBAR\ HOTEL.jpg") no-repeat center/cover;
+  position: relative;
+  /* Mengatur banner utama website hotel */
+}
+
+.overlay {
+  background: rgba(0,0,0,0.6);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  /* Memberi lapisan hitam transparan di atas gambar */
+}
+
+.hero-text {
+  margin-left: 60px;
+  max-width: 600px;
+  /* Mengatur posisi tulisan di banner */
+}
+
+.hero-text h4 {
+  color: gold;
+  letter-spacing: 2px;
+  /* Mengatur tulisan kecil selamat datang di */
+}
+
+.hero-text h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 60px;
+  line-height: 1.2;
+  /* Mengatur judul besar hotel */
+}
+
+.hero-text span {
+  color: gold;
+  /* Tulisan tertentu berwarna emas hotel dan resor */
+}
+
+.hero-text p {
+  margin: 20px 0;
+  font-size: 14px;
+  opacity: 0.8;
+  /* Mengatur deskripsi hotel */
+}
+
+.btn-main {
+  background: gold;
+  border: none;
+  padding: 12px 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* FEATURES */
+.features {
+  display: flex;
+  justify-content: space-around;
+  background: #0c1b24;
+  padding: 35px;
+  /* Membuat fitur hotel berjajar horizontal */
+}
+
+.box {
+  text-align: center;
+  /* Membuat isi fitur rata tengah */
+}
+
+.box i {
+  font-size: 25px;
+  color: gold;
+  margin-bottom: 10px;
+  /* Mengatur warna dan ukuran icon fasilitas */
+}
+
+.box h3 {
+  font-size: 14px;
+}
+
+.box p {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+nav a:hover {
+  color: gold;
+  /* Saat mouse diarahkan ke menu warna berubah menjadi emas */
+}
+
+.btn-main:hover,
+.btn-nav:hover {
+  background: #c9a227;
+  /* Saat tombol disentuh mouse warna berubah lebih gelap */
+}
+
+/* PAGE HEADER */
+.page-header {
+  height: 250px;
+  background: #0c1b24;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  /* Bnner judul halaman */
+}
+
+    </style>
+    <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+<header>
+  <div class="logo">
+    <i class="fa-solid fa-crown"></i>
+    <span>ArunikaGrand</span>
+  </div>
+
+  <nav>
+    <a class="active" href="index.html">BERANDA</a>
+    <a href="rooms.html">KAMAR</a>
+    <a href="about us.html">TENTANG KAMI</a>
+    <a href="contact.html">KONTAK</a>
+    <button class="btn-nav">
+    <a href="rooms.html" class="btn-nav">PESAN SEKARANG</a> 
+  </button>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="overlay">
+    <div class="hero-text">
+      <h4>SELAMAT DATANG DI</h4>
+      <h1>ARUNIKAGRAND <br><span>HOTEL & RESOR</span></h1>
+      <p>Rasakan kemewahan, kenyamanan, dan moment tak terlupakan bersama kami</p>
+      
+      
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features">
+  <div class="box">
+    <i class="fa-solid fa-wifi"></i>
+    <h3>GRATIS WIFI</h3>
+    <p>Internet berkecepatan tinggi</p>
+  </div>
+
+  <div class="box">
+    <i class="fa-solid fa-utensils"></i>
+    <h3>SARAPAN</h3>
+    <p>Lezat setiap pagi</p>
+  </div>
+
+  <div class="box">
+    <i class="fa-solid fa-water-ladder"></i>
+    <h3>KOLAM RENANG</h3>
+    <p>Bersantai</p>
+  </div>
+
+  <div class="box">
+    <i class="fa-solid fa-bell-concierge"></i>
+    <h3>24/7 PELAYANAN</h3>
+    <p>Kami disini untuk anda</p>
+  </div>
+</section>
+
+</body>
+</html>
