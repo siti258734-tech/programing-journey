@@ -8,9 +8,7 @@
 <!-- ICON -->
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
 <style>
-
 /*  RESET  */
 *{
   margin:0;
@@ -25,27 +23,23 @@ body{
 }
 
 /*  NAVBAR  */
+
 header{
   position:fixed;
   top:0;
   width:100%;
   display:flex;
-/*Nabar tetap di atas saat di scrol */
-
-  /*flexbox*/
   justify-content:space-between;
   align-items:center;
   padding:20px 60px;
   background:rgba(0,0,0,0.8);
   z-index:999;
-  /* Merapikan isi navbar */
 }
 
 .logo{
   font-size:22px;
   font-weight:bold;
   color:gold;
-  /* Membuat logo */
 }
 
 .logo i{
@@ -58,7 +52,6 @@ nav a{
   margin:0 12px;
   font-size:14px;
   transition:0.3s;
-  /* Menu navigasi */
 }
 
 nav a:hover{
@@ -79,10 +72,10 @@ nav a.active{
 }
 
 /*  PAGE HEADER  */
+
 .page-header{
   padding-top:140px;
   text-align:center;
-  /* Memberi jarak dari navbar dan membuat judul di tengah */
 }
 
 .page-header h1{
@@ -91,6 +84,7 @@ nav a.active{
 }
 
 /*  CONTACT  */
+
 .contact{
   padding:60px 20px 80px;
 }
@@ -102,7 +96,6 @@ nav a.active{
   display:grid;
   grid-template-columns:1fr 1fr;
   gap:40px;
-  /* Membuat layout */
 }
 
 .contact form{
@@ -154,14 +147,13 @@ nav a.active{
   font-size:15px;
 }
 
-
-
 </style>
 </head>
 
 <body>
 
-/*  NAVBAR  */
+<!--  NAVBAR  -->
+
 <header>
 
   <div class="logo">
@@ -181,17 +173,19 @@ nav a.active{
 
 </header>
 
-/* HEADER */
+<!-- BAGIAN HEADER -->
+
 <section class="page-header">
   <h1>Kontak Kami</h1>
 </section>
 
-/* KONTAK */
+<!--  BAGIAN CONTACT  -->
+
 <section class="contact">
 
   <div class="contact-container">
 
-    /* FORM */
+    <!-- FORM -->
     <form>
       <input type="text"
       placeholder="Nama Anda"
@@ -209,20 +203,18 @@ nav a.active{
       onclick="alert('Terimakasih, pesan anda telah kami terima.')">
 
       KIRIM PESAN DAN MASUKAN
-
       </button>
-
     </form>
-    /* INFO KONTAK  */
+
+    <!-- CONTACT INFO -->
     <div class="contact-info">
       <h3>Info Kontak</h3>
-      <p>📍 Batang, Indonesia</p>
+      <p>📍 Sragen, Indonesia</p>
       <p>📞 0812-3456-7890</p>
       <p>📧 arunikagrand@gmail.com</p>
     </div>
 
   </div>
-
 </section>
 
 </body>
